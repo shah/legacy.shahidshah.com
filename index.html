@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Shahid N. Shah - Accelerating Technology Strategy</title>
+
+		<!-- include Google Feed API (key is valid for http://www.shahidshah.com) -->
+		<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAnzMRla3hRsEMiOGI7VPFZhTZGVF6DkTA9VoSiAYvEwCeUYLIARQkpUQVHui8DdnUri3NMvuSz8_F4g"></script>
+
+        <link rel="stylesheet" href="resources/css/main.css"/>
+
+        <script type="text/javascript" src="resources/javascripts/jquery-1.3.1.min.js"></script>
+        <script type="text/javascript" src="resources/javascripts/jquery.corners.js"></script>
+        <script type="text/javascript" src="resources/javascripts/jquery.dropshadow.js"></script>
+
+		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+		</script>
+		<script type="text/javascript">
+		_uacct = "UA-93818-6";
+		urchinTracker();
+		</script>
+
+		<script type="text/JavaScript">
+			if (!google.feeds) google.load("feeds", "1");
+
+			$(document).ready(
+				function()
+				{
+					initializeFeed("http://www.healthcareguy.com/index.php/feed/", "hcGuyFeed");
+					initializeFeed("http://www.federalarchitect.com/feed/", "fedArchFeed");
+					initializeFeed("http://shahid.shah.org/index.php/feed/", "shahidPerspFeed");
+
+  					$('#container').corners("7px");
+  					$('#footer').corners("bottom 7px");
+  					$('#container').dropShadow();
+  					$('#name').dropShadow({color: 'lightyellow', left: -5, top: 2});
+  					$('#tagline').dropShadow({color: 'lightyellow', left: -5, top: 2});
+  					//$('#mugshot').dropShadow();
+					$('.panel').corners();
+					$('.panel').dropShadow({color: '#F88405', left: 2, top: 2});
+  				}
+  			);
+
+			function initializeFeed(feedUrl, containerId)
+			{
+				var feed = new google.feeds.Feed(feedUrl);
+					feed.setNumEntries(10)
+					feed.load(function(result) {
+					if (!result.error) {
+					  var container = document.getElementById(containerId);
+					  for (var i = 0; i < result.feed.entries.length; i++) {
+						var entry = result.feed.entries[i];
+						var entryAnchorElem = document.createElement("a");
+						entryAnchorElem.setAttribute("href", entry.link)
+						entryAnchorElem.appendChild(document.createTextNode(entry.title));
+						var entryElem = document.createElement("li");
+						entryElem.setAttribute("class", "entry")
+						entryElem.appendChild(entryAnchorElem);
+						container.appendChild(entryElem);
+					  }
+					}
+				});
+			}
+
+		</script>
+    </head>
+
+	<body>
+		<!-- <img id="mugshot" src="resources/images/Shahid N. Shah Photo.png" style="float: left;"/> -->
+		<div class="heading">
+			<div class="name" id="name">Shahid N. Shah</div>
+			<div class="tagline" id="tagline">Business Focused Technology Strategy &amp; Architecture Guru</div>
+		</div>
+		<!-- <div id="mugshot"><img src="resources/images/Shahid N. Shah Photo.png"/></div> -->
+		<div class="container" id="container">
+			<div class="masthead" id="masthead">
+				<img src="resources/images/photo.png" style="float:right" id="mugshot"/>
+				Welcome to my site. I'm an expert in devising and accelerating technology strategies aligned
+				to your business goals. My specialty is bridging the sometimes large gap between
+				technical resources, business managers, and CXO's so that they can all come together
+				and deliver sophisticated solutions to real world problems.
+			</div>
+
+			<div class="content" id="content">
+
+				<div class="badges">
+					<a href="http://www.linkedin.com/in/shahidshah"><img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.gif" border=0></a>
+					&nbsp;
+					<a href="http://www.netspective.com"><img src="resources/images/netspective-red-rgb.png" border="0" title="My Consulting Firm"></a>
+					<div class="availability">
+					I am available as a subject for media interviews and speaking engagements on general technology, healthcare IT, government tech,
+					and many other topics. <a href="mailto:shahid@shah.org">Drop me a note if you'd like to talk.</a>
+					</div>
+				</div>
+
+
+				<table style="margin-top: 10px;">
+					<tr valign="top">
+						<td width="33.3%">
+							<center><img src="resources/images/whois.png"/></center>
+							<div class="panel" id="whois">
+								<div class="frame">Who am I?</div>
+								<div class="body">
+									<ul>
+										<li>Entrepreneur</li>
+										<li>Speaker, Blogger, Author</li>
+										<li>Technology & Architecture Evangelist</li>
+										<li>Enterprise Architect</li>
+										<li>Computer Scientist</li>
+										<li>Database Architect & Modeler</li>
+										<li>Trainer, Coach, & Mentor</li>
+									</ul>
+								</div>
+							</div>
+						</td>
+
+						<td width="33.3%">
+							<center><img src="resources/images/positions.png"/></center>
+							<div class="panel" id="positions">
+								<div class="frame">Positions I've held</div>
+								<div class="body">
+									<ul>
+										<li>Chief Executive Officer</li>
+										<li>Chief Technology Officer</li>
+										<li>SVP of Technology</li>
+										<li>Chief Architect</li>
+										<li>Product Development Manager</li>
+										<li>Senior Engineer & Team Lead</li>
+										<li>Software Engineer</li>
+									</ul>
+								</div>
+							</div>
+						</td>
+
+						<td style="padding-right: 10px;" width="33.3%">
+							<center><img src="resources/images/clients.png"/></center>
+							<div class="panel" id="clients">
+								<div class="frame">Clients I've served</div>
+								<div class="body">
+									<ul>
+										<li>Executive Office of the President<br/>(EOP, OA, OMB)</li>
+										<li>CardinalHealth CTS, Pyxis</li>
+										<li>U.S. Patent & Trademark Office</li>
+										<li>National Institutes of Health</li>
+										<li>American Red Cross</li>
+										<li>Northrop Grumman</li>
+										<li>Verizon Wireless</li>
+										<li>COMSYS</li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<div class="publications" id="publications">
+					<div class="headline">
+						<img src="resources/images/documents.png"/> My publications and blogs
+					</div>
+					<div class="feeds" id="feeds">
+						<table>
+							<tr valign="top">
+								<th width="33.33%">
+									<a href="http://www.healthcareguy.com">The Healthcare IT Guy Blog</a>
+									<div class="description">
+									I'm a healthcare IT guru; this blog is where I share general advice and
+									guidance to both technical and non-technical
+									readers who want to learn more about technology in healthcare. My readers
+									include physicians, managers, hospital staff, engineers,
+									and many others.
+									</div>
+								</th>
+								<th width="33.33%">
+									<a href="http://www.federalarchitect.com">Federal Architect Blog</a>
+									<div class="description">
+									I am an expert in enterprise architecture (EA) and work with some of
+									the most important federal agencies helping them with their technology
+									strategies. My readers include executives, engineers, and architects working
+									for the government and its contracting community.
+									</div>
+								</th>
+								<th width="33.33%">
+									<a href="http://shahid.shah.org">Shahid's Perspectives Blog</a>
+									<div class="description">
+									I still code for a living so I have many things to say about
+									software engineering and general technology; on this blog I share my
+									views on various technical topics and entrepreneurship.
+									</div>
+								</th>
+							</tr>
+							<tr valign="top">
+								<td><ul class="feed" id="hcGuyFeed"></ul></td>
+								<td><ul class="feed" id="fedArchFeed"></ul></td>
+								<td><ul class="feed" id="shahidPerspFeed"></ul></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer" id="footer">&copy; Copyright 2009, Shahid N. Shah. All Rights Reserved.</div
+		</div>
+	</body>
+</html>

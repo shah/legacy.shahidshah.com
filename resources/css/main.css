@@ -1,0 +1,174 @@
+body 
+{
+    background: #3B3B3B;
+    color: #555555;
+    font-family: Lucida Grande,Lucida Sans Unicode,sans-serif;
+    font-size: small;
+    text-align: right;
+    align:center; 
+}
+
+body div.heading
+{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: lightyellow;
+    width: 800px;
+    font-family: Georgia, Serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body div.heading div.name
+{
+    color: white;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: left;
+}
+
+body div.heading div.tagline
+{
+    color: lightyellow;
+    font-size: 18px;
+    font-style: italic;
+    text-align: left;
+}
+
+div.container
+{
+    margin: 0 auto;
+    background: #F88405 url(../images/layout/spotlight-small-bg.jpg);
+    padding: 0px; 
+    padding-top: 5px; 
+    text-align:center; 
+    width: 800px;
+}
+
+div.container div.masthead
+{
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: left;
+}
+
+div.container div.content
+{
+    background: #FFFFFF url(../images/layout/content-bg-tile.gif) repeat-x scroll left top;
+    padding: 0px; 
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+div.container div.content div.badges
+{
+    padding-top: 25px;
+}
+
+div.container div.content div.badges div.availability
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font: 12pt Georgia;
+}
+
+
+div.container div.panel
+{
+    background: white;
+    border: 1px solid #F88405;
+    margin-left: 7px; 
+    height: 175px;
+}
+
+div.container div.panel div.frame
+{
+    background: #F88405;
+    border-bottom: #333333 1px solid;
+    font-weight: bold;
+    color: white;
+}
+
+div.container div.panel div.body 
+{
+    text-align: left;
+}
+
+div.container div.panel div.body ul
+{
+    padding-left: 25px;
+    padding-right: 5px;
+}
+
+div.container div.content div.publications
+{
+    text-align: left;
+    background: #FFFFFF;
+    padding: 10px; 
+}
+
+div.container div.content div.publications
+{
+    text-align: left;
+}
+
+div.container div.content div.publications div.headline
+{
+    padding: 10px; 
+    color: #333333;
+    vertical-align: middle;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+#feeds 
+{ 
+    padding: 10px;
+    background: #FFFFFF;
+}
+
+#feeds th
+{
+    text-align: left;
+}
+
+#feeds ul.feed li.entry
+{
+    margin-left: -1em;
+    padding-bottom: 5px;
+}
+
+#feeds ul.feed li.entry a
+{ 
+    text-decoration: none;
+    color: #333333;
+}
+
+#feeds ul.feed li.entry a:hover
+{ 
+    text-decoration: underline;
+    color: blue;
+}
+
+#feeds div.description
+{ 
+    text-align: left;
+    font-family: georgia;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 9pt;
+    color: #999999;
+}
+
+.container .footer
+{
+    background: #FFFFFF url(../images/layout/comments-bg.gif) repeat-x scroll left top;
+    padding: 0px; 
+}
+
